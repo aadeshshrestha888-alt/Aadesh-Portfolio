@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Professional portfolio of [Aadesh Shrestha] — A creative developer crafting exceptional digital experiences." />
+  <meta name="keywords" content="web developer, front-end developer, UI/UX designer, portfolio" />
+  <meta name="author" content="Aadesh Shrestha" />
+  <title>Aadesh Shrestha — Creative Developer | Portfolio</title>
+
+  <!-- Favicon (replace with your own) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💼</text></svg>" />
+
+  <!-- Google Fonts: Multiple weights for richer typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome for professional icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Project stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============================================================= -->
+  <!-- SCROLL PROGRESS BAR                                            -->
+  <!-- Shows reading progress at the very top of the page             -->
+  <!-- ============================================================= -->
+  <div class="progress-bar" id="progressBar"></div>
+
+  <!-- ============================================================= -->
+  <!-- NAVIGATION                                                     -->
+  <!-- Sticky header with glass morphism effect                       -->
+  <!-- ============================================================= -->
+  <header class="site-header" id="header">
+    <nav class="container nav" aria-label="Primary navigation">
+
+      <!-- Logo with animated gradient text -->
+      <a href="#home" class="logo">
+        <span class="logo__text">Aadesh<span class="logo__accent">Shrestha</span></span>
+        <span class="logo__dot">.</span>
+      </a>
+
+      <!-- Mobile menu toggle -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu" />
+      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <!-- Navigation links -->
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="#projects" class="btn btn--primary btn--small">View Work</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ============================================================= -->
+  <!-- HERO SECTION                                                   -->
+  <!-- Animated hero with particles background effect                 -->
+  <!-- ============================================================= -->
+  <section id="home" class="hero">
+    <!-- Animated background gradient orbs -->
+    <div class="hero__bg">
+      <div class="orb orb--1"></div>
+      <div class="orb orb--2"></div>
+      <div class="orb orb--3"></div>
+    </div>
+
+    <div class="container hero__content">
+      <!-- Profile image with glow effect -->
+      <div class="hero__image-wrapper">
+        <div class="hero__image">
+          <!-- Replace src with your actual photo -->
+         <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Ccircle cx='100' cy='100' r='90' fill='%236366f1'/%3E%3Ctext x='100' y='125' font-size='80' text-anchor='middle' fill='white' font-family='Arial'%3EAS%3C/text%3E%3C/svg%3E" alt="AS" />
+</div>
+        <div class="hero__status">
+          <span class="status-dot"></span>
+          Available for work
+        </div>
+      </div>
+
+      <!-- Hero text content -->
+      <div class="hero__text">
+        <p class="hero__greeting" data-animate="fade-up">Hello, I'm</p>
+        <h1 class="hero__name" data-animate="fade-up" data-delay="100">
+          <span class="text-gradient">Aadesh Shrestha</span>
+        </h1>
+        <h2 class="hero__role" data-animate="fade-up" data-delay="200">
+          Creative Developer <span class="hero__separator">+</span> UI/UX Designer
+        </h2>
+        <p class="hero__tagline" data-animate="fade-up" data-delay="300">
+          I craft exceptional digital experiences that blend beautiful design
+          with powerful functionality. From concept to deployment, I bring ideas to life
+          with clean code and creative problem-solving.
+        </p>
+
+        <!-- Hero action buttons -->
+        <div class="hero__actions" data-animate="fade-up" data-delay="400">
+          <a href="#projects" class="btn btn--primary btn--large">
+            <i class="fas fa-briefcase"></i>
+            View My Work
+          </a>
+          <a href="#contact" class="btn btn--ghost btn--large">
+            <i class="fas fa-paper-plane"></i>
+            Let's Talk
+          </a>
+        </div>
+
+        <!-- Social proof / Quick stats -->
+        <div class="hero__stats" data-animate="fade-up" data-delay="500">
+          <div class="stat">
+            <span class="stat__number">10+</span>
+            <span class="stat__label">Projects Done</span>
+          </div>
+          <div class="stat">
+            <span class="stat__number">1+</span>
+            <span class="stat__label">Years Experience</span>
+          </div>
+          <div class="stat">
+            <span class="stat__number">10+</span>
+            <span class="stat__label">Happy Clients</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <a href="#about" class="scroll-indicator" aria-label="Scroll to next section">
+      <span class="scroll-indicator__text">Scroll Down</span>
+      <span class="scroll-indicator__icon">
+        <i class="fas fa-chevron-down"></i>
+      </span>
+    </a>
+  </section>
+
+  <!-- ============================================================= -->
+  <!-- ABOUT SECTION                                                  -->
+  <!-- Professional bio with interactive skill categories             -->
+  <!-- ============================================================= -->
+  <section id="about" class="about">
+    <div class="container">
+      <!-- Section header with decorative line -->
+      <header class="section-header" data-animate="fade-up">
+        <span class="section-header__number">01</span>
+        <div class="section-header__content">
+          <p class="section-header__label">Get To Know Me</p>
+          <h2 class="section-header__title">About Me</h2>
+          <div class="section-header__line"></div>
+        </div>
+      </header>
+
+      <div class="about__grid">
+        <!-- Left column: Bio text -->
+        <div class="about__content" data-animate="fade-right">
+          <div class="about__text">
+            <p class="lead">
+              I'm a passionate developer with a keen eye for design and a commitment
+              to creating digital experiences that make a difference.
+            </p>
+            <p>
+              With over 1 years in the industry, I specialize in building responsive,
+              accessible web applications using modern technologies. My approach combines
+              technical excellence with user-centered design principles to deliver
+              solutions that not only look great but solve real problems.
+            </p>
+            <p>
+              When I'm not coding, you'll find me exploring new design trends,
+              contributing to open-source projects, or sharing knowledge with the
+              developer community through blogs and mentorship.
+            </p>
+          </div>
+
+          <!-- Call-to-action for resume -->
+          <a href="#" class="btn btn--outline" download>
+            <i class="fas fa-download"></i>
+            Download Resume
+          </a>
+        </div>
+
+        <!-- Right column: Skills showcase -->
+        <div class="about__skills" data-animate="fade-left">
+          <!-- Skill category 1 -->
+          <div class="skill-category">
+            <div class="skill-category__header">
+              <i class="fas fa-code skill-category__icon"></i>
+              <h3 class="skill-category__title">Frontend Development</h3>
+            </div>
+            <ul class="skill-list">
+              <li class="skill-item">HTML5 & CSS3</li>
+              <li class="skill-item">JavaScript (ES6+)</li>
+              <li class="skill-item">React & Next.js</li>
+              <li class="skill-item">TypeScript</li>
+              <li class="skill-item">Tailwind CSS</li>
+            </ul>
+          </div>
+
+          <!-- Skill category 2 -->
+          <div class="skill-category">
+            <div class="skill-category__header">
+              <i class="fas fa-palette skill-category__icon"></i>
+              <h3 class="skill-category__title">Design & Tools</h3>
+            </div>
+            <ul class="skill-list">
+              <li class="skill-item">Figma & Adobe XD</li>
+              <li class="skill-item">Responsive Design</li>
+              <li class="skill-item">UI/UX Principles</li>
+              <li class="skill-item">Git & GitHub</li>
+              <li class="skill-item">Accessibility (WCAG)</li>
+            </ul>
+          </div>
+
+          <!-- Skill category 3 -->
+          <div class="skill-category">
+            <div class="skill-category__header">
+              <i class="fas fa-server skill-category__icon"></i>
+              <h3 class="skill-category__title">Backend & More</h3>
+            </div>
+            <ul class="skill-list">
+              <li class="skill-item">Node.js & Express</li>
+              <li class="skill-item">REST APIs</li>
+              <li class="skill-item">MongoDB & SQL</li>
+              <li class="skill-item">Firebase & Supabase</li>
+              <li class="skill-item">CI/CD & DevOps</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================= -->
+  <!-- PROJECTS SECTION  ★ CORE FEATURE ★                            -->
+  <!--                                                                -->
+  <!--  ► HOW TO ADD A NEW PROJECT CARD:                              -->
+  <!--                                                                -->
+  <!--  1. Copy one complete <article class="project-card"> block     -->
+  <!--  2. Paste it inside the .projects__grid container              -->
+  <!--  3. Update the following fields:                               -->
+  <!--     • .project-card__image src (your project screenshot)       -->
+  <!--     • .project-card__category (e.g., "Web App", "E-Commerce")  -->
+  <!--     • .project-card__title (your project name)                 -->
+  <!--     • .project-card__desc (brief description)                  -->
+  <!--     • .project-card__tags (add/remove technology tags)         -->
+  <!--     • .btn href (link to live demo or GitHub repo)             -->
+  <!--                                                                -->
+  <!--  The CSS Grid will automatically handle responsive layout!     -->
+  <!-- ============================================================= -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <!-- Section header -->
+      <header class="section-header" data-animate="fade-up">
+        <span class="section-header__number">02</span>
+        <div class="section-header__content">
+          <p class="section-header__label">My Portfolio</p>
+          <h2 class="section-header__title">Featured Projects</h2>
+          <div class="section-header__line"></div>
+          <p class="section-header__subtitle">
+            A showcase of my recent work across web development, UI design, and creative coding.
+            Each project represents unique challenges and innovative solutions.
+          </p>
+        </div>
+      </header>
+
+      <!-- Filter tabs (optional - for future enhancement) -->
+      <div class="project-filters" data-animate="fade-up" data-delay="100">
+        <button class="filter-btn filter-btn--active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="web">Web Apps</button>
+        <button class="filter-btn" data-filter="design">UI/UX Design</button>
+        <button class="filter-btn" data-filter="frontend">Frontend</button>
+      </div>
+
+      <!-- Project cards grid -->
+      <div class="projects__grid">
+
+        <!-- ============ PROJECT CARD 1 ============ -->
+        <article class="project-card" data-category="web" data-animate="fade-up" data-delay="200">
+          <!-- Project thumbnail -->
+          <div class="project-card__image">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop" alt="E-Commerce Platform Dashboard" />
+            <div class="project-card__overlay">
+              <a href="#" class="project-card__link" target="_blank" rel="noopener noreferrer" aria-label="View project">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project details -->
+          <div class="project-card__content">
+            <span class="project-card__category">Web Application</span>
+            <h3 class="project-card__title">E-Commerce Platform</h3>
+            <p class="project-card__desc">
+              A full-featured online shopping platform with real-time inventory management,
+              secure payment integration, and an intuitive admin dashboard.
+            </p>
+
+            <!-- Technology tags -->
+            <ul class="project-card__tags">
+              <li>React</li>
+              <li>Node.js</li>
+              <li>MongoDB</li>
+              <li>Stripe</li>
+            </ul>
+
+            <!-- Action buttons -->
+            <div class="project-card__actions">
+              <a href="#" class="btn btn--small btn--primary" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-eye"></i>
+                Live Demo
+              </a>
+              <a href="#" class="btn btn--small btn--outline" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i>
+                Code
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ============ PROJECT CARD 2 ============ -->
+        <article class="project-card" data-category="design" data-animate="fade-up" data-delay="300">
+          <div class="project-card__image">
+            <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&h=600&fit=crop" alt="Task Management Dashboard" />
+            <div class="project-card__overlay">
+              <a href="#" class="project-card__link" target="_blank" rel="noopener noreferrer" aria-label="View project">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card__content">
+            <span class="project-card__category">UI/UX Design</span>
+            <h3 class="project-card__title">Task Manager Pro</h3>
+            <p class="project-card__desc">
+              A collaborative task management tool with drag-and-drop kanban boards,
+              team collaboration features, and detailed analytics.
+            </p>
+
+            <ul class="project-card__tags">
+              <li>Figma</li>
+              <li>Vue.js</li>
+              <li>Firebase</li>
+              <li>Tailwind</li>
+            </ul>
+
+            <div class="project-card__actions">
+              <a href="#" class="btn btn--small btn--primary" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-eye"></i>
+                Live Demo
+              </a>
+              <a href="#" class="btn btn--small btn--outline" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i>
+                Code
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ============ PROJECT CARD 3 ============ -->
+        <article class="project-card" data-category="frontend" data-animate="fade-up" data-delay="400">
+          <div class="project-card__image">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop" alt="Analytics Dashboard" />
+            <div class="project-card__overlay">
+              <a href="#" class="project-card__link" target="_blank" rel="noopener noreferrer" aria-label="View project">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card__content">
+            <span class="project-card__category">Data Visualization</span>
+            <h3 class="project-card__title">Analytics Dashboard</h3>
+            <p class="project-card__desc">
+              An interactive data visualization dashboard with real-time metrics,
+              customizable charts, and export functionality for business intelligence.
+            </p>
+
+            <ul class="project-card__tags">
+              <li>D3.js</li>
+              <li>TypeScript</li>
+              <li>Next.js</li>
+              <li>PostgreSQL</li>
+            </ul>
+
+            <div class="project-card__actions">
+              <a href="#" class="btn btn--small btn--primary" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-eye"></i>
+                Live Demo
+              </a>
+              <a href="#" class="btn btn--small btn--outline" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i>
+                Code
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ▼ ADD MORE PROJECT CARDS BELOW THIS LINE ▼ -->
+        
+        <!-- Copy any card above and paste here, then customize -->
+
+        <!-- ▲ END OF PROJECTS GRID ▲ -->
+
+      </div>
+
+      <!-- View more projects link -->
+      <div class="projects__cta" data-animate="fade-up">
+        <p>Want to see more?</p>
+        <a href="https://github.com/yourusername" class="btn btn--outline" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-github"></i>
+          View All Projects on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================= -->
+  <!-- CONTACT SECTION                                                -->
+  <!-- Modern contact area with social links                          -->
+  <!-- ============================================================= -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <!-- Section header -->
+      <header class="section-header" data-animate="fade-up">
+        <span class="section-header__number">03</span>
+        <div class="section-header__content">
+          <p class="section-header__label">Get In Touch</p>
+          <h2 class="section-header__title">Let's Work Together</h2>
+          <div class="section-header__line"></div>
+        </div>
+      </header>
+
+      <div class="contact__content">
+        <!-- Contact text -->
+        <div class="contact__text" data-animate="fade-right">
+          <p class="contact__message">
+            I'm always excited to collaborate on interesting projects or discuss new opportunities.
+            Whether you have a question, a project idea, or just want to say hello, feel free to reach out!
+          </p>
+
+          <!-- Email with copy button -->
+          <div class="contact__email-wrapper">
+            <a href="mailto:shresthaaadesh9@youremail.com" class="contact__email">
+              <i class="fas fa-envelope"></i>
+              shresthaaadesh9@email.com
+            </a>
+            <button class="copy-btn" data-copy="shresthaaadesh9@youremail.com" aria-label="Copy email address">
+              <i class="fas fa-copy"></i>
+            </button>
+          </div>
+
+          <!-- Alternative contact methods -->
+          <div class="contact__alt">
+            <p><strong>Prefer other channels?</strong></p>
+            <p>I'm also available on LinkedIn, Twitter, and GitHub. Choose whatever works best for you!</p>
+          </div>
+        </div>
+
+        <!-- Social links card -->
+        <div class="contact__socials" data-animate="fade-left">
+          <h3 class="contact__socials-title">Connect With Me</h3>
+          
+          <a href="https://www.linkedin.com/in/aadesh-shrestha-938b49316/" class="social-card" target="_blank" rel="noopener noreferrer">
+            <div class="social-card__icon social-card__icon--linkedin">
+              <i class="fab fa-linkedin-in"></i>
+            </div>
+            <div class="social-card__content">
+              <h4 class="social-card__title">LinkedIn</h4>
+              <p class="social-card__handle">@aadeshshrestha01</p>
+            </div>
+            <i class="fas fa-arrow-right social-card__arrow"></i>
+          </a>
+
+          <a href="https://github.com/yourusername" class="social-card" target="_blank" rel="noopener noreferrer">
+            <div class="social-card__icon social-card__icon--github">
+              <i class="fab fa-github"></i>
+            </div>
+            <div class="social-card__content">
+              <h4 class="social-card__title">GitHub</h4>
+              <p class="social-card__handle">@aadeshshrestha01</p>
+            </div>
+            <i class="fas fa-arrow-right social-card__arrow"></i>
+          </a>
+
+          <a href="https://www.facebook.com/Aadesh.shrestha40" class="social-card" target="_blank" rel="noopener noreferrer">
+            <div class="social-card__icon social-card__icon--facebook">
+              <i class="fab fa-facebook"></i>
+            </div>
+            <div class="social-card__content">
+              <h4 class="social-card__title">Facebook</h4>
+              <p class="social-card__handle">@aadeshshrestha40</p>
+            </div>
+            <i class="fas fa-arrow-right social-card__arrow"></i>
+          </a>
+
+          <a href="https://www.instagram.com/aadeshshrestha01/" class="social-card" target="_blank" rel="noopener noreferrer">
+            <div class="social-card__icon social-card__icon--instagram">
+              <i class="fab fa-instagram"></i>
+            </div>
+            <div class="social-card__content">
+              <h4 class="social-card__title">Instagram</h4>
+              <p class="social-card__handle">@aadeshshrestha01</p>
+            </div>
+            <i class="fas fa-arrow-right social-card__arrow"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================= -->
+  <!-- FOOTER                                                         -->
+  <!-- ============================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__content">
+        <!-- Footer brand -->
+        <div class="footer__brand">
+          <a href="#home" class="footer__logo">
+            <span class="text-gradient">AadeshShrestha</span>
+          </a>
+          <p class="footer__tagline">Crafting digital experiences with passion and precision.</p>
+        </div>
+
+        <!-- Quick links -->
+        <div class="footer__links">
+          <h4 class="footer__heading">Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Social links -->
+        <div class="footer__social">
+          <h4 class="footer__heading">Follow Me</h4>
+          <div class="footer__social-icons">
+            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/aadesh-shrestha-938b49316/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://www.facebook.com/Aadesh.shrestha40/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/aadeshshrestha01/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="footer__bottom">
+        <p>&copy; <span id="year">2026</span> Aadesh Shrestha. All rights reserved.</p>
+        <p class="footer__made-with">
+          Made with <i class="fas fa-heart"></i> and lots of <i class="fas fa-coffee"></i>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- ============================================================= -->
+  <!-- JAVASCRIPT                                                     -->
+  <!-- Lightweight vanilla JS for interactions                        -->
+  <!-- ============================================================= -->
+  <script>
+    // Auto-update year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Scroll progress bar
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.pageYOffset;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const scrollPercent = (scrollTop / docHeight) * 100;
+      document.getElementById('progressBar').style.width = scrollPercent + '%';
+    });
+
+    // Back to top button
+    const backToTop = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 300) {
+        backToTop.classList.add('visible');
+      } else {
+        backToTop.classList.remove('visible');
+      }
+    });
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Copy email to clipboard
+    document.querySelectorAll('.copy-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const email = btn.getAttribute('data-copy');
+        navigator.clipboard.writeText(email).then(() => {
+          btn.innerHTML = '<i class="fas fa-check"></i>';
+          setTimeout(() => {
+            btn.innerHTML = '<i class="fas fa-copy"></i>';
+          }, 2000);
+        });
+      });
+    });
+
+    // Intersection Observer for scroll animations
+    const observerOptions = {
+      threshold: 0.15,
+      rootMargin: '0px 0px -100px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-in');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('[data-animate]').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Project filter functionality (optional enhancement)
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.project-card');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Update active button
+        filterBtns.forEach(b => b.classList.remove('filter-btn--active'));
+        btn.classList.add('filter-btn--active');
+
+        // Filter projects
+        const filter = btn.getAttribute('data-filter');
+        projectCards.forEach(card => {
+          if (filter === 'all' || card.getAttribute('data-category') === filter) {
+            card.style.display = 'block';
+            setTimeout(() => card.style.opacity = '1', 10);
+          } else {
+            card.style.opacity = '0';
+            setTimeout(() => card.style.display = 'none', 300);
+          }
+        });
+      });
+    });
+
+    // Close mobile menu when clicking a link
+    const navLinks = document.querySelectorAll('.nav-link');
+    const navToggle = document.getElementById('nav-toggle');
+    
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        navToggle.checked = false;
+      });
+    });
+  </script>
+
+</body>
+</html>
